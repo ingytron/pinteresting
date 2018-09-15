@@ -34,6 +34,9 @@ gem 'devise', github: 'plataformatec/devise'
 
 gem 'paperclip', '~> 6.1'
 gem 'masonry-rails'
+gem 'acts_as_votable'
+gem 'font-awesome-rails'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

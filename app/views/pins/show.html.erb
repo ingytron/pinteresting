@@ -10,5 +10,11 @@
   <%= @pin.description %>
 </p>
 
+<%= link_to like_pin_path(@pin), method: :put, class: "btn btn-secondary" do %>
+  <i class="fa fa-heart"></i>
+  <!--span class="glyphicon glyphicon-heart"></span-->
+  <%= @pin.get_upvotes.size %>
+<% end %>
+
 <%= link_to 'Edit', edit_pin_path(@pin) %> |
 <%= link_to 'Back', pins_path %>
