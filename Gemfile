@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', github: 'plataformatec/devise'
 
 gem 'paperclip', '~> 6.1'
+gem 'masonry-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

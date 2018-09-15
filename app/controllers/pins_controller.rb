@@ -14,7 +14,9 @@ class PinsController < ApplicationController
 
   # GET /pins/new
   def new
-    @pin = current_user.pins.build
+    @pin = Pin.new
+    # @pin = current_user.pins.build
+    # @pin = current_user.pins.new
   end
 
   # GET /pins/1/edit
@@ -69,6 +71,6 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:title, :description)
+      params.require(:pin).permit(:title, :description, :image)
     end
 end
